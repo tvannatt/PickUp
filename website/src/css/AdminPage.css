@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.App {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.App-logo {
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        height: 3em;
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-footer {
+    background-color: var(--footer-bg-light);
+    color: var(--footer-text-light);
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.LiveUpdate-Table {
+    flex-grow: 1;
+}
+
+body.dark-mode .App-footer {
+    background-color: var(--footer-bg-dark);
+    color: var(--footer-text-dark);
+}
+
+.App-header {
+    background-color: var(--header-bg-light);
+    color: var(--header-text-light);
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+body.dark-mode .App-header {
+    background-color: var(--header-bg-dark);
+    color: var(--header-text-dark);
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-btn-wrapper input[type='file'] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+}
+
+.button2{
+    display: inline-block;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333; 
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.button2:hover {
+    background-color: #ddd;
+}
+
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+}
+
+.notification {
+    margin-right: 10px;
+}
+
+.notification-success {
+    color: black;
+}
+
+.notification-error {
+    color: red;
+}

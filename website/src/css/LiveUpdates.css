@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+.custom-table-font {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+}
+
+thead {
+  text-align: left;
+  background-color: var(--table-background-color);
+  color: var(--table-text-color);
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: left; 
+  height: 1.5em;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-logo-spin {
+  animation: App-logo-spin infinite 2s linear; /* Adjust the timing as needed */
+  height: 2em;
+}

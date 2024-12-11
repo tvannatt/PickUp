@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "encryptionKeys": {
+      ".read": "auth != null",  // Allow any authenticated user to read keys
+      ".write": "auth != null"  // Allow any authenticated user to write keys
+    }
+  }
+}
